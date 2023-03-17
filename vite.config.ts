@@ -60,6 +60,9 @@ const viteConfig = defineConfig((mode: ConfigEnv) => {
 			__NEXT_VERSION__: JSON.stringify(process.env.npm_package_version),
 			__NEXT_NAME__: JSON.stringify(process.env.npm_package_name),
 		},
+    devServer:{
+      open:true
+    }
 	};
 });
 
