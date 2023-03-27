@@ -10,7 +10,7 @@ import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 import '/@/theme/index.scss';
 import VueGridLayout from 'vue-grid-layout';
-
+import 'virtual:svg-icons-register';
 
 const app = createApp(App);
 

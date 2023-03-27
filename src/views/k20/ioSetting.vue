@@ -1,4 +1,5 @@
 <template>
+  <SvgIcon name="deviceinfo"></SvgIcon>
 	<el-form :model="form" label-width="150">
 		<el-form-item label="Activity name">
 			<el-input v-model="form.name" />

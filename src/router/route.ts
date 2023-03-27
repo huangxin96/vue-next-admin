@@ -52,6 +52,38 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 				name: 'home',
 				component: () => import('/@/views/k20/ioSetting.vue'),
 				meta: {
+					title: '信息',
+					isLink: '',
+					isHide: false,
+					isKeepAlive: true,
+					isAffix: true,
+					isIframe: false,
+					roles: ['admin', 'common'],
+					icon: 'iconfont icon-shouye',
+				},
+				children: [
+					{
+						path: '/deviceInformation',
+						name: 'deviceInformation',
+						component: () => import('/@/views/k20/ioSetting.vue'),
+						meta: {
+							title: '设备信息',
+							isLink: '',
+							isHide: false,
+							isKeepAlive: false,
+							isAffix: false,
+							isIframe: false,
+							roles: ['admin'],
+							icon: 'deviceinfo|svg',
+						},
+					},
+				],
+			},
+			{
+				path: '/infomation',
+				name: 'home',
+				component: () => import('/@/views/k20/ioSetting.vue'),
+				meta: {
 					title: 'message.router.home',
 					isLink: '',
 					isHide: false,
